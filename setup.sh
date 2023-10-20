@@ -1,22 +1,4 @@
-# nvim-env
-
-ubntu jammy 22.04
-
-PowerToys
-<https://learn.microsoft.com/ja-jp/windows/powertoys/install>
-
-1. Download these four ttf files:
-   - [MesloLGS NF Regular.ttf](
-       https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf)
-   - [MesloLGS NF Bold.ttf](
-       https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf)
-   - [MesloLGS NF Italic.ttf](
-       https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf)
-   - [MesloLGS NF Bold Italic.ttf](
-       https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf)
-choose `MesloLGS NF`
-
-```bash
+#! /bin/bash
 sudo apt-get update
 sudo apt-get -y upgrade
 
@@ -27,6 +9,7 @@ pip3 install pylint jedi
 # zsh
 sudo apt-get -y install zsh
 chsh -s /bin/zsh
+sudo su $USER
 zsh --version
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -142,4 +125,3 @@ nvim --headless +"CocInstall -sync coc-python|qa"
 
 # vim-go
 git clone https://github.com/fatih/vim-go.git ~/.local/share/nvim/site/pack/plugins/start/vim-go
-```
