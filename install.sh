@@ -16,6 +16,8 @@ chsh -s /bin/zsh
 # create link
 ln -s "$SCRIPT_PATH"/.zshrc ~
 ln -s "$SCRIPT_PATH"/.p10k.zsh ~
+mkdir -p ~/.config/nvim/
+ln -s "$SCRIPT_PATH"/init.vim ~/.config/nvim/
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
@@ -27,6 +29,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-
 git clone https://github.com/wting/autojump.git
 cd autojump
 ./install.py
+rm -rf autojump
 
 # fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf

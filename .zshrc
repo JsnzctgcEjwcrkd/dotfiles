@@ -130,3 +130,5 @@ export SAVEHIST=100000
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
