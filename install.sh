@@ -18,6 +18,7 @@ ln -s "$SCRIPT_PATH"/.zshrc ~
 ln -s "$SCRIPT_PATH"/.p10k.zsh ~
 mkdir -p ~/.config/nvim/
 ln -s "$SCRIPT_PATH"/init.vim ~/.config/nvim/
+ln -s "$SCRIPT_PATH"/.tmux.conf ~
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc

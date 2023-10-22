@@ -45,3 +45,11 @@ nvim --headless +"CocInstall -sync coc-python|qa"
 
 # vim-go
 git clone https://github.com/fatih/vim-go.git ~/.local/share/nvim/site/pack/plugins/start/vim-go
+
+# screen
+sudo apt-get -y install screen
+screen -v
+
+# tmux
+sudo apt-get -y install tmux
+tmux -V
