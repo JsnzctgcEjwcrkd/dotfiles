@@ -132,3 +132,12 @@ POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+# rbenv
+eval "$(~/.rbenv/bin/rbenv init - zsh)"
+
+# do not open git log in less
+unset LESS;
+
+# git completion
+autoload -Uz compinit && compinit
